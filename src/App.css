@@ -1,38 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: local('Proxima Nova'), url(./fonts/ProximaNova/ProximaNova-Bold.woff) format('woff');
+}
+
 .App {
+  width: 400px;
+  height: 590px;
+  top: 30px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.logoTitle {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 21px;
+  padding-left: 29px;
+}
+
+.logoDescription {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  padding-left: 29px;
+  color: #6B85A3;
+  padding-bottom: 20px;
+}
+
+.drop-area {
+  width: 360px;
+  height: 470px;
+  background: #F5F9FF;
+  border: 1px dashed #4991E5;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prevDrop {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  padding-top: 165px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.signatureOne {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #324964;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.signatureTwo {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #6B85A3;
 }
 
-.App-link {
-  color: #61dafb;
+.signatureЕhree {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #4991E5;
+  cursor: pointer
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="file"] {
+  display: none;
+}
+
+.logoImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
